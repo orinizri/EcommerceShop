@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    border: 1px solid fuchsia;
+}
+h1 {
+    text-align: center;
+}
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    border: 1px solid blue;
+}
+.buttons {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.buttons input {
+    max-width: 7%;
+}
+.display-none {
+    display: none;
+}
