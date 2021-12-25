@@ -9,15 +9,32 @@ import './index-style.css';
 
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            shop : [],
+            cart : []
+        }
+    }
+    getItemsInCart = (ItemsInCart) => {
+        console.log(ItemsInCart)
+        this.setState(prevState => ({
+            cart : ItemsInCart
+        }), ()=>{
+                console.log(this.state.cart)
+            })
+    }
+
+
     render() {
         return (
             <main>
-                < Navigation/>
+                < Navigation counter={this.state.cart} />
                 <div className="container">
                     <Routes>
                         <Route path="/" element={<Home />}/>
-                        <Route path="/products" element={<Products />}/>
-                        <Route path="/cart" element={<Cart />}/>
+                        <Route path="/products" element={<Products getCart={this.getItemsInCart} />}/>
+                        <Route path="/cart" element={<Cart counter={this.state.cart} />}/>
                     </Routes>
                 </div>
             </main>

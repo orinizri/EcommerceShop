@@ -11,16 +11,16 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
     border: 1px solid blue;
 }
 .buttons {
     display: flex;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
+    justify-content: center;
 }
 .buttons input {
-    max-width: 7%;
+    max-width: 8%;
+    text-align: center;
 }
 .display-none {
     display: none;

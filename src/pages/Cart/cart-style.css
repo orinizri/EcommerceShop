@@ -1,0 +1,25 @@
+.cart {
+    
+}
+.item-in-cart-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(187, 187, 187);
+}
+.item-in-cart-container img {
+    max-width: 100px;
+}
+.item-in-cart-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 7%;
+}
+.total-sum {
+    display:flex;
+    justify-content: center;
+    background-color: goldenrod;
+    border-radius: 5px;
+}
