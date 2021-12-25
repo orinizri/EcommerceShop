@@ -43,7 +43,6 @@ export default class Cart extends React.Component {
     gettingItems = () => {
         console.log(this.props.counter)
         return this.props.counter.map((item, index) => {
-            console.log(item)
             return (
                 <div className='item-in-cart-container' id={item.id}>
                     <img alt={item.name} src={item.avatar}/>
